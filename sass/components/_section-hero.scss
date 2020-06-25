@@ -1,27 +1,55 @@
 .section-hero {
-    color: $white-text-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    height: 600px;
+    // display: flex;
+    height: 400px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, $bg-variants, $bg-variants), url(../images/Header-img.jpg);
-    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-size: 480px 400px, contain;
     background-position: center;
+    
+    @media screen and (min-width: 480px) {
+        background-size: 480px, cover;
+        }
+    @media screen and (min-width: 768px) {
+        background-size: 768px, cover;
+    }
+    
+     @media screen and (min-width: 1200px) {
+        background-size: 480px, cover;
+    }
 }
 
 .hero-tittle{
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
     margin-bottom: 30px;
+    padding-top: 118px;
+    color: $white-text-color;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        line-height: 1.62;
+        }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        // padding-top: 200px;
+    }
+
 }
 
 .hero-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: $white-text-color;
     background-color: $accent-color;
     font-weight: 500;
