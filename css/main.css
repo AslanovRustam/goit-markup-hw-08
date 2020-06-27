@@ -47,6 +47,8 @@ body {
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container.header-container {
@@ -235,12 +237,7 @@ body {
 .header-mail {
   width: 16px;
   height: 11px;
-}
-
-@media screen and (min-width: 480px) {
-  .header-mail {
-    margin-right: 10px;
-  }
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,12 +255,7 @@ body {
 .header-phone {
   width: 10px;
   height: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .header-phone {
-    margin-right: 10px;
-  }
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -280,5 +272,96 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.hero-tittle {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 118px;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-tittle {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-tittle {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px 32px;
+  border: transparent;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover, .hero-button:focus {
+  color: #212121;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.section-title {
+  text-align: center;
+  color: #212121;
+  font-weight: 700;
+  line-height: 1,14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.list .section-title {
+  margin: 0;
+}
+
+.main-advantegies {
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-advantegies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.advabtagies-icon {
+  padding: 25px 100px;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+}
+
+.list-information {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

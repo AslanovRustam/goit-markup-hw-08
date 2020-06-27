@@ -162,10 +162,7 @@
 .header-mail{
     width: 16px;
     height: 11px;
-
-    @media screen and (min-width: 480px) {
-        margin-right: 10px;
-    }
+    margin-right: 10px;
 
     @media screen and (min-width: 768px) {
         margin-right: 8px;
@@ -179,11 +176,8 @@
 .header-phone{
     width: 10px;
     height: 15px;
+    margin-right: 10px;
     
-    @media screen and (min-width: 480px) {
-        margin-right: 10px;
-    }
-
     @media screen and (min-width: 768px) {
         margin-right: 8px;
     }
