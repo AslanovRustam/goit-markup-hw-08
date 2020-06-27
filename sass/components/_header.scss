@@ -1,38 +1,7 @@
-.page-header{
-    border-bottom:  1px solid #ECECEC;
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+.container.header-container{
+    padding: 16px 15px;
 }
-// .header-container{
-//     padding: 0;
-// }
-
-.page-header .header-container{
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-    }
-
-   }
-
-.main-nav{
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center; 
-    }
-
-}
-
-   .logo {
+.logo {
     color: $secondary-text-color;
     font-family: Raleway, sans-serif;
 
@@ -89,8 +58,7 @@
         line-height:1.19;
     }
 }
-
-   .site-nav{
+.site-nav{
     display: block;
     padding: 0;
     margin-top: 0;
@@ -107,10 +75,7 @@
 
 .site-nav .link{
     position: relative;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    
     font-family: Roboto;
     font-style: 400;
     font-weight: 500;
@@ -121,11 +86,17 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     &:hover, &:focus {
         color: $accent-color;
     }
     
 }
+
 .site-nav .link.current::after{
     position: absolute;
     bottom: 0;
@@ -143,21 +114,10 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    @media screen and (min-width: 480px) {
-
-    }
-    
-    @media screen and (min-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    
 }
 
-
 .list-nav{
-    display: flex;
+
     align-items: center;
     margin: 0;
     padding: 0;
@@ -166,27 +126,27 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
     
 }
 
 .list.list-nav .list-link + .list-link{
-    @media screen and (min-width: 480px) {
-    margin-bottom: 40px;
-    }
+    // @media screen and (min-width: 480px) {
+    // margin-bottom: 40px;
+    // }
 
     @media screen and (min-width: 1200px) {
         margin-left: 50px;
     }
 }
 
-.list-nav.img{
-    display: flex;
-}
-
 .list-link {
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
+    // margin-left: 10px;
     color: $primary-text-color;
     fill: $primary-text-color;
     text-decoration: none;
@@ -196,10 +156,9 @@
     &:hover, &:focus {
         color: $accent-color;
         fill: $accent-color;
-    }
-
-   
+    } 
 }
+
 .header-mail{
     width: 16px;
     height: 11px;
@@ -237,3 +196,4 @@
 .link {
     text-decoration: none;
 }
+
