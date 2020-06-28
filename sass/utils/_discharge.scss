@@ -2,6 +2,8 @@ a{
     text-decoration: none;
 }
 section{
+    margin: 0;
+    padding: 0;
     @media screen and (min-width: 480px) {
         width: 480px;
         padding-top: 60px;
@@ -26,6 +28,8 @@ section{
 .list, .list-portfolio, .team-members {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 h2{
     margin: 0;
