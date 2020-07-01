@@ -12,50 +12,63 @@
     <!-- шапка -->
     <header  class="page-header">
       <div class="container header-container">
+        <div class="main-nav">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span> <span class="logo-studio"> Studio</span></a>
-        <div class="main-nav is-open" data-menu>
-          <ul class="site-nav list">
-            <li class="item"><a href="" class="link current studio">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-       
-      <ul class="list list-nav">
-        <li class="list-nav-link">                
-          <a href="mailto:info@devstudio.com" class="list-link mail">
-            <svg class="header-mail">
-              <use href="./images/symbol-defs.svg#icon-envelopehover"></use>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель меню">
+              <use class="icon-cross" href="./image/symbol-defs-mobile.svg#icon-close_40px"></use>
+              <use class="icon-menu" href="./image/symbol-defs-mobile.svg#icon-menu_40px"></use>
             </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="list-nav-link">
-            <a href="tel:+380961111111" class="list-link phone">
-            <svg class="header-phone">
-              <use href="./images/symbol-defs.svg#icon-Vector"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+              <nav>
+                <ul class="site-nav list">
+                  <li class="item"><a href="" class="link current studio">Студия</a></li>
+                  <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                  <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>  
+              </nav>
+            <ul class="list list-nav">
+          <li class="list-nav-link">                
+            <a href="mailto:info@devstudio.com" class="list-link mail">
+              <svg class="header-mail" width="16" height="11">
+                <use href="./images/symbol-defs.svg#icon-envelopehover"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="list-nav-link">
+              <a href="tel:+380961111111" class="list-link phone">
+              <svg class="header-phone" width="10" height="15">
+                <use href="./images/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+            </ul>
+          </div>
+
         </div>
     </div>
     </header>
     <main>
       <!-- главная секция-->
-      <div>
-        <section class="section-hero">
+      <section class="section-hero">
+        <div>
           <h1 class="hero-tittle">эффективные решения <br />для вашего бизнеса</h1>
           <button data-modal-open class="hero-button">Заказать услугу</button>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- отличительные особенности-->
-      <section>
+      <section class="advantegies">
        <div class="container ">
         <!-- <h2>заголовок, который потом скроем</h2> -->
         <ul class="list main-advantegies">
           <li class="advabtagies-item  radar">
-            <svg class="advabtagies-icon">
-              <use href="./images/symbol-defs.svg#icon-antenna-1-2"></use>
-            </svg>
+            <div class="advantegies-container">
+              <svg class="advabtagies-icon">
+                <use href="./images/symbol-defs.svg#icon-antenna-1-2"></use>
+              </svg>
+            </div>
             <h3 class="section-title">Внимание к деталям</h3>
             <p class="list-information">
               Идейные соображения, а также начало повседневной работы по
@@ -63,9 +76,11 @@
             </p>
           </li>
           <li class="advabtagies-item clock">
-            <svg class="advabtagies-icon">
-              <use href="./images/symbol-defs.svg#icon-clock-1"></use>
-            </svg>
+            <div class="advantegies-container">
+              <svg class="advabtagies-icon">
+                <use href="./images/symbol-defs.svg#icon-clock-1"></use>
+              </svg>
+            </div>
             <h3 class="section-title">Пунктуальность</h3>
             <p class="list-information">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -73,9 +88,11 @@
             </p>
           </li>
           <li class="advabtagies-item diagram">
-            <svg class="advabtagies-icon">
-              <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
-            </svg>
+            <div class="advantegies-container">
+              <svg class="advabtagies-icon">
+                <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
+              </svg>
+            </div>
             <h3 class="section-title">Планирование</h3>
             <p class="list-information">
               Равным образом консультация с широким активом в значительной
@@ -83,9 +100,11 @@
             </p>
           </li>
           <li class="advabtagies-item astronaut">
-            <svg class="advabtagies-icon">
-              <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
-            </svg>
+            <div class="advantegies-container">
+              <svg class="advabtagies-icon">
+                <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
+              </svg>
+            </div>
             <h3 class="section-title">Современные технологии</h3>
             <p class="list-information">
               Значимость этих проблем настолько очевидна, что реализация
@@ -96,14 +115,18 @@
        </div>
       </section>
       <!--чем мы занимаемся-->
-      <section>
+      <section class="container-our-works">
        <div class="container works">
         <h2 class="section-title-team">Чем мы занимаемся</h2>
         <ul class="list list-works">
           <li class="our-works">  
             <div class="work-vatiants">
               <img
-              src="./images/app.svg"
+              srcset="
+              ./images/desctop.jpg 1x,
+              ./images/desctop2x.jpg 2x
+              "
+              src="./images/desctop.jpg"
               alt="desctop applications"
               width="370"
             />
@@ -112,14 +135,30 @@
           </li>
           <li class="our-works">
             <div class="work-vatiants">
-              <img src="./images/box.svg" alt="mobile applications" width="370" />
+              <img
+              srcset="
+              ./images/box.jpg 1x,
+              ./images/box2x.jpg 2x
+              "
+              src="./images/box.jpg"
+              alt="desctop applications"
+              width="370"
+            />
             <h3 class="section-hero-variants">Мобильные приложения</h3>
             </div>
            
           </li>
           <li class="our-works">
            <div class="work-vatiants">
-            <img src="./images/mac.svg" alt="design" width="370" />
+            <img
+            srcset="
+            ./images/mac.jpg 1x,
+            ./images/mac2x.jpg 2x
+            "
+            src="./images/mac.jpg"
+            alt="desctop applications"
+            width="370"
+          />
             <h3 class="section-hero-variants">Дизайнерские решения</h3>
            </div>
           </li>
@@ -128,14 +167,24 @@
       </section>
       <!--наша команда-->
     <section class="our-team"> 
-      <div class="container">
+      <div class="container team">
         <h2 class="section-title-team">Наша команда</h2>
         <ul class="team-members">
           <li class="team-name">
-            <img src="./images/John-Smith.svg" alt="photo" width="270" class="team-photo"/>
-            <h3 class="team">Николай Кучеренко</h3>
+            <img
+            srcset="
+              ./images/Nikolay-450.jpg 270w,
+              ./images/Nikolay-354.jpg 540w,
+              ./images/Nikolay-270.jpg 810w
+            "
+            src="./images/Nikolay-450.jpg"
+            class="team-foto"
+            alt="фото Николая"
+            sizes="(min-width:1200px) 50vw, (min-width:768) 50vw, 100vw"
+          />
+            <h3 class="team-subname">Николай Кучеренко</h3>
         <p class="team-job">Product Designer</p>
-        <ul class="list">
+        <ul class="list icon">
           <li class="team-icon">
             <a href="https://www.instagram.com/"  class="link-social">
               <svg class="link-icon">
@@ -175,7 +224,7 @@
             <img src="./images/Marta-Stewart.svg" alt="photo" width="270" class="team-photo"/>
             <h3 class="team">Ольга Иванова</h3>
             <p class="team-job">Frontend Developer</p>
-            <ul class="list">
+            <ul class="list icon">
               <li class="team-icon">
                 <a href="https://www.instagram.com/"  class="link-social">
                   <svg class="link-icon">
@@ -215,7 +264,7 @@
             <img src="./images/Robert-Jakis.svg" alt="photo" width="270" class="team-photo"/>
             <h3 class="team">Андрей Шевченко</h3>
         <p class="team-job">Marketing</p>
-        <ul class="list">
+        <ul class="list icon">
           <li class="team-icon">
             <a href="https://www.instagram.com/"  class="link-social">
               <svg class="link-icon">
@@ -255,7 +304,7 @@
             <img src="./images/Martin-Doe.svg" alt="photo" width="270" class="team-photo"/>
             <h3 class="team">Иван Николаев</h3>
         <p class="team-job">UI Designer</p>
-        <ul class="list">
+        <ul class="list icon">
           <li class="team-icon">
             <a href="https://www.instagram.com/"  class="link-social">
               <svg class="link-icon">

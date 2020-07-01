@@ -1,0 +1,69 @@
+.advantegies{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container{
+    @media screen and (min-width: 480px){
+        width: 480px;
+    }
+    @media screen and (min-width: 768px){
+    width: 768px;
+    }
+    @media screen and (min-width: 1200px){
+    width: 1200px;
+    }
+}
+
+.main-advantegies {
+    margin: -15px;
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+.advabtagies-item{
+    text-align: center;
+    margin: 15px;  
+    @media screen and (min-width: 768px){
+    text-align: start;
+    width: calc((100% - 4 * 15px) / 2);
+    }  
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    }
+}
+.advantegies-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $our-team-bg-color;
+    border-radius: 4px;
+}
+.advabtagies-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.section-title{
+    color: $secondary-text-color;
+    font-weight: 700;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px){
+    text-align: center;
+    }
+}
+.list-information{
+    text-align: start;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
