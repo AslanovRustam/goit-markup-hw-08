@@ -1,0 +1,180 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+.footer-container {
+    text-align: center;
+    @media screen and (min-width: 1200px){
+        display: flex;
+        text-align: start;
+        align-items: baseline;
+        }
+}
+.nav-footer{
+    @media screen and (max-width: 1199px) and (min-width: 768px){
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.address-container{
+    @media screen and (max-width: 767px){
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+    margin-right: 69px;
+    }
+}
+.logo-studio-footer{
+    color: $white-text-color;
+    font-style: normal;
+}
+.footer-logo{
+    display: flex;
+    // margin-top: 48px;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.19;
+    letter-spacing: 0.03em;
+}
+.address {
+    color: $white-text-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-adress{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.footer-link-adress, .footer-link {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.footer-link {
+    margin-bottom: 0;
+}
+.footer-social-link{
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px){
+    margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    }
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+.team-icon.end{
+    margin-right: 11px;
+}
+.team-icon.end:last-child {
+    margin-right: 0;
+}
+.link-social.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+        background-color: $accent-color;
+        }
+}
+.link-icon.end{
+    fill: $white-text-color;
+}
+// .footer-form{
+//     display: flex;
+// }
+.form-signature{
+    @media screen and (min-width: 1200px){
+    display: flex;
+    }
+}
+.footer-tittle{
+    display: block;
+    margin-bottom: 20px;
+    color: $white-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-input{
+    width: 100%;
+    padding: 18px 12px;
+    color: rgba(255,255,255,0.6);
+    background-color: #2f303a;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    @media screen and (max-width: 1199px){
+    max-width: 450px;
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px){
+    width: 358px;
+    margin-right: 12px;
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-decoration: none;
+    border-color: transparent;
+    min-width: 200px;
+    margin: 0;
+    
+    color: $white-text-color;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: $secondary-text-color;
+        background-color: $white-text-color;
+    }
+}
+
+.signature::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    background-size: contain;
+    background-position: center;
+    margin-left: 10px;
+}
+.signature{
+    @media screen and (max-width: 1199px){
+    margin: auto;
+    }
+}

@@ -1,5 +1,11 @@
 .our-team{
     background-color: $our-team-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .section-title-team{
     margin-top: 0;
@@ -16,14 +22,14 @@
         line-height: 1.17;
     }
 }
-.container.team{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-     }
-}
+// .container.team{
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     @media screen and (min-width: 1200px) {
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//      }
+// }
 .team-members{
     margin: -15px;
     @media screen and (min-width: 768px){
@@ -34,17 +40,27 @@
 .team-name{
     text-align: center;
     padding-bottom: 24px;
-    margin: 15px;
     background-color: $white-text-color;
     box-shadow: 0px 2px 1px rgba(0,0,0,0.2), 0px 1px 1px rgba(0,0,0,0.14), 0px 1px 3px rgba(0,0,0,0.12);
     border-radius: 4px;
     @media screen and (min-width: 768px){
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
     }
     @media screen and (min-width: 1200px){
     width: calc((100% - 8 * 15px) / 4);
     }
 }
+.team-name:not(:last-child) {
+    @media screen and (max-width: 767px){
+    margin-bottom: 30px;
+    }
+}
+.team-foto{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 .team-subname{
     margin: 0;
     margin-bottom: 10px;
