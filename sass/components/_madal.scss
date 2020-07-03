@@ -166,8 +166,9 @@
 .licence{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
-    width: 448px;
+    // width: 448px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -202,7 +203,7 @@
 }
 
 .licence-input{
-    width: 448px; 
+    max-width: 448px; 
 
     letter-spacing: 0.03em;
     font-size: 14px;
