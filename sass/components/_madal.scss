@@ -164,6 +164,7 @@
     transform: translate(-16px, 12px);
 }
 .licence{
+    display: block;
     // display: flex;
     align-items: center;
     justify-content: center;
@@ -191,9 +192,10 @@
     height: 15px;
     border: 1px solid #212121;
     border-radius: 4px;
+    margin-left: 12px;
 
     cursor: pointer;
-
+    
 }
 .checkbox:checked + .checkbox-icon{
    background-image: url('../images/icon-check.svg'); 
